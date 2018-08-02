@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Micro Crafts Web",
-  "main": "index.js",
+  "main": "mucraftserver.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node src/mucraftserver.js"
   },
   "author": "Dinesh Subramanian",
   "license": "ISC",
