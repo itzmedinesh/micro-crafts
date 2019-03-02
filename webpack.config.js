@@ -16,6 +16,11 @@ module.exports = {
       test: /\.css$/,
       exclude: /node_modules/,
       use: ['style-loader', 'css-loader']
+    },        {
+        test: /\.(gif|png|PNG|JPE?G|jpe?g|svg)$/,  
+        use: [{
+            loader: 'url-loader?limit=1000000' 
+        }]
     }]
   },
   output: {
@@ -23,6 +28,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.css', '.js', '.jsx']
+    extensions: ['.css', '.js', '.jsx','.jpg']
   }
 };
